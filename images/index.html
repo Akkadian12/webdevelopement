@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Oooh+Baby&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="htmlcss/style.css">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('bgman.jpg');
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .left
+    {
+        /* border: 2px solid blue; */
+        display: inline-block;
+        position: absolute;
+        left: 44px;
+        top: 18px;
+    }
+    .left img
+    {
+        width: 107px;
+        filter: invert(100%);
+        display: inline-block;
+        margin: auto;
+    }
+    .left div{
+        text-align: center;
+        line-height: 10px;
+        font-size: 20px;
+    }
+    .mid
+    {
+        width: 50%;
+        margin:auto;
+        margin-top: 35px;
+        /* border: 2px solid green; */
+    }
+    .right
+    {
+        display:inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 45px;
+        top: 45px;
+    }
+    .btn
+    {
+        margin: 0px 9px;
+        background-color: rgb(36, 34, 34);
+        color: white;
+        padding: 3px 12px;
+        border-radius:10px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .btn:hover{
+        background: rgb(15, 15, 15);
+    }
+    .navbar
+    {
+        display:inline-block;
+    }
+    .navbar li
+    {
+        display:inline-block;
+        font-size: 23px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding:34px 23px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .container
+    {
+        /* border:2px solid red; */
+        width: 34%;
+        margin: 94px 43px;
+        padding: 13px 65px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    .form-group input{
+        text-align: center;
+    display: block;
+    width: 348px;
+    margin: 11px auto;
+    border-radius: 10px;
+    padding: 2px;
+    font-family: 'Baloo Bhai 2';
+    font-weight: bold;
+    }
+    .container h1
+    {
+        text-align: center;
+    }
+    .container button{
+        display:block;
+        width: 350px;
+        margin: auto;
+    }
+    
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Akki's fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"class="">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Joint the best gym of Bhopal now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your age">
+                <input type="text" name="" placeholder="Enter your locality">
+                <input type="text" name="" placeholder="Enter your gender">
+                <input type="text" name="" placeholder="Enter your phone no">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn" value="submit">submit now</button>
+        </form>
+    </div>
+</body>
+</html>
